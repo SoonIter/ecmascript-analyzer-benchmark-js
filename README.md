@@ -8,23 +8,23 @@ Median time to analyze a whole codebase. The fastest in each row is bold, and ev
 
 | | Files | Yuku | TypeScript | typescript-eslint |
 |---|---:|---|---|---|
-| [TypeScript compiler](#typescript-compiler) | 77 | **132 ms** | 837 ms · 6.35× | 1,290 ms · 9.79× |
-| [Excalidraw](#excalidraw) | 618 | **101 ms** | 684 ms · 6.76× | 1,088 ms · 10.7× |
-| [three.js](#threejs) | 755 | **53.6 ms** | 473 ms · 8.82× | 571 ms · 10.7× |
-| [Vue](#vue) | 473 | **72.7 ms** | 469 ms · 6.46× | 758 ms · 10.4× |
-| [Zod](#zod) | 332 | **48.4 ms** | 324 ms · 6.69× | 635 ms · 13.1× |
-| [date-fns](#date-fns) | 1,643 | **53.7 ms** | 432 ms · 8.04× | 417 ms · 7.77× |
-| [Svelte](#svelte) | 416 | **31.4 ms** | 289 ms · 9.23× | 318 ms · 10.1× |
-| [Preact](#preact) | 33 | **2.9 ms** | 28.8 ms · 10.1× | 53.5 ms · 18.7× |
+| [TypeScript compiler](#typescript-compiler) | 77 | **103 ms** | 669 ms · 6.48× | 1,030 ms · 9.96× |
+| [Excalidraw](#excalidraw) | 618 | **82.1 ms** | 582 ms · 7.09× | 863 ms · 10.5× |
+| [three.js](#threejs) | 755 | **43.8 ms** | 408 ms · 9.33× | 431 ms · 9.86× |
+| [Vue](#vue) | 473 | **57.1 ms** | 394 ms · 6.90× | 595 ms · 10.4× |
+| [Zod](#zod) | 332 | **38.3 ms** | 263 ms · 6.86× | 496 ms · 12.9× |
+| [date-fns](#date-fns) | 1,643 | **43.5 ms** | 382 ms · 8.79× | 326 ms · 7.50× |
+| [Svelte](#svelte) | 416 | **25.0 ms** | 250 ms · 9.99× | 244 ms · 9.76× |
+| [Preact](#preact) | 33 | **2.3 ms** | 24.3 ms · 10.6× | 40.7 ms · 17.8× |
 
 On single files:
 
 | | Files | Yuku | TypeScript | typescript-eslint |
 |---|---:|---|---|---|
-| [typescript.js](#typescriptjs) | 1 | **85.9 ms** | 773 ms · 9.00× | 1,288 ms · 15.0× |
-| [checker.ts](#checkerts) | 1 | **32.7 ms** | 272 ms · 8.33× | 430 ms · 13.2× |
-| [lib.dom.d.ts](#libdomdts) | 1 | **8.5 ms** | 82.0 ms · 9.59× | 185 ms · 21.6× |
-| [react.js](#reactjs) | 1 | **0.48 ms** | 5.2 ms · 10.8× | 6.9 ms · 14.4× |
+| [typescript.js](#typescriptjs) | 1 | **71.0 ms** | 603 ms · 8.48× | 994 ms · 14.0× |
+| [checker.ts](#checkerts) | 1 | **28.1 ms** | 217 ms · 7.74× | 325 ms · 11.6× |
+| [lib.dom.d.ts](#libdomdts) | 1 | **6.8 ms** | 67.2 ms · 9.82× | 146 ms · 21.3× |
+| [react.js](#reactjs) | 1 | **0.35 ms** | 4.3 ms · 12.1× | 5.5 ms · 15.8× |
 
 ## Projects
 
@@ -36,9 +36,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **132 ms** | **±0.45%** | **122 ms** | **153 ms** | **baseline** |
-| TypeScript | 837 ms | ±1.16% | 816 ms | 1,107 ms | 6.35× slower |
-| typescript-eslint | 1,290 ms | ±0.80% | 1,249 ms | 1,494 ms | 9.79× slower |
+| **Yuku** | **103 ms** | **±0.76%** | **99.8 ms** | **193 ms** | **baseline** |
+| TypeScript | 669 ms | ±1.03% | 631 ms | 867 ms | 6.48× slower |
+| typescript-eslint | 1,030 ms | ±1.87% | 940 ms | 1,456 ms | 9.96× slower |
 
 ### [Excalidraw](https://github.com/excalidraw/excalidraw/tree/1919728724a1b71af73cb7e6d2d1a418a1415b1c)
 
@@ -48,9 +48,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **101 ms** | **±1.74%** | **92.7 ms** | **173 ms** | **baseline** |
-| TypeScript | 684 ms | ±0.38% | 662 ms | 726 ms | 6.76× slower |
-| typescript-eslint | 1,088 ms | ±0.69% | 1,054 ms | 1,235 ms | 10.7× slower |
+| **Yuku** | **82.1 ms** | **±1.36%** | **73.2 ms** | **110 ms** | **baseline** |
+| TypeScript | 582 ms | ±1.88% | 552 ms | 875 ms | 7.09× slower |
+| typescript-eslint | 863 ms | ±1.96% | 797 ms | 1,164 ms | 10.5× slower |
 
 ### [three.js](https://github.com/mrdoob/three.js/tree/157f0885b8428b5ffe8f6f7309b2d6f59faa1497)
 
@@ -60,9 +60,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **53.6 ms** | **±1.39%** | **44.3 ms** | **64.5 ms** | **baseline** |
-| TypeScript | 473 ms | ±0.49% | 455 ms | 526 ms | 8.82× slower |
-| typescript-eslint | 571 ms | ±0.99% | 539 ms | 684 ms | 10.7× slower |
+| **Yuku** | **43.8 ms** | **±1.72%** | **35.5 ms** | **82.9 ms** | **baseline** |
+| TypeScript | 408 ms | ±1.14% | 388 ms | 589 ms | 9.33× slower |
+| typescript-eslint | 431 ms | ±1.22% | 407 ms | 589 ms | 9.86× slower |
 
 ### [Vue](https://github.com/vuejs/core/tree/4ab865a848a1da3d10fb674f857e5fff13094644)
 
@@ -72,9 +72,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **72.7 ms** | **±1.49%** | **67.0 ms** | **127 ms** | **baseline** |
-| TypeScript | 469 ms | ±0.44% | 450 ms | 587 ms | 6.46× slower |
-| typescript-eslint | 758 ms | ±0.86% | 731 ms | 920 ms | 10.4× slower |
+| **Yuku** | **57.1 ms** | **±1.11%** | **52.3 ms** | **87.1 ms** | **baseline** |
+| TypeScript | 394 ms | ±0.74% | 375 ms | 479 ms | 6.90× slower |
+| typescript-eslint | 595 ms | ±1.02% | 550 ms | 726 ms | 10.4× slower |
 
 ### [Zod](https://github.com/colinhacks/zod/tree/004d800c9e3cd4c79930f55aa4ad080225b22efd)
 
@@ -84,9 +84,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **48.4 ms** | **±1.54%** | **39.3 ms** | **69.9 ms** | **baseline** |
-| TypeScript | 324 ms | ±0.63% | 310 ms | 377 ms | 6.69× slower |
-| typescript-eslint | 635 ms | ±0.89% | 605 ms | 818 ms | 13.1× slower |
+| **Yuku** | **38.3 ms** | **±1.58%** | **31.5 ms** | **55.3 ms** | **baseline** |
+| TypeScript | 263 ms | ±1.06% | 250 ms | 373 ms | 6.86× slower |
+| typescript-eslint | 496 ms | ±1.38% | 455 ms | 770 ms | 12.9× slower |
 
 ### [date-fns](https://github.com/date-fns/date-fns/tree/717ce0a807ea4c6b540d015b5c408723175b2838)
 
@@ -96,9 +96,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **53.7 ms** | **±1.88%** | **41.0 ms** | **71.7 ms** | **baseline** |
-| typescript-eslint | 417 ms | ±0.82% | 407 ms | 464 ms | 7.77× slower |
-| TypeScript | 432 ms | ±0.96% | 410 ms | 561 ms | 8.04× slower |
+| **Yuku** | **43.5 ms** | **±1.40%** | **33.1 ms** | **117 ms** | **baseline** |
+| typescript-eslint | 326 ms | ±1.17% | 310 ms | 474 ms | 7.50× slower |
+| TypeScript | 382 ms | ±0.79% | 361 ms | 439 ms | 8.79× slower |
 
 ### [Svelte](https://github.com/sveltejs/svelte/tree/020242d6bef059df9ae8c13dc8dbff4c9b31e0ff)
 
@@ -108,9 +108,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **31.4 ms** | **±1.91%** | **24.9 ms** | **47.4 ms** | **baseline** |
-| TypeScript | 289 ms | ±0.69% | 277 ms | 321 ms | 9.23× slower |
-| typescript-eslint | 318 ms | ±1.45% | 300 ms | 492 ms | 10.1× slower |
+| **Yuku** | **25.0 ms** | **±1.42%** | **20.0 ms** | **36.2 ms** | **baseline** |
+| typescript-eslint | 244 ms | ±1.20% | 227 ms | 301 ms | 9.76× slower |
+| TypeScript | 250 ms | ±0.78% | 237 ms | 289 ms | 9.99× slower |
 
 ### [Preact](https://github.com/preactjs/preact/tree/3fcc391adc243d479ab10b4cf70fa609708c9348)
 
@@ -120,9 +120,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **2.9 ms** | **±0.62%** | **2.8 ms** | **27.6 ms** | **baseline** |
-| TypeScript | 28.8 ms | ±0.96% | 27.6 ms | 75.7 ms | 10.1× slower |
-| typescript-eslint | 53.5 ms | ±0.82% | 47.9 ms | 65.2 ms | 18.7× slower |
+| **Yuku** | **2.3 ms** | **±0.67%** | **2.0 ms** | **5.5 ms** | **baseline** |
+| TypeScript | 24.3 ms | ±0.65% | 22.9 ms | 39.1 ms | 10.6× slower |
+| typescript-eslint | 40.7 ms | ±1.23% | 35.8 ms | 78.7 ms | 17.8× slower |
 
 ## Single files
 
@@ -134,9 +134,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **85.9 ms** | **±2.89%** | **77.9 ms** | **134 ms** | **baseline** |
-| TypeScript | 773 ms | ±0.28% | 756 ms | 797 ms | 9.00× slower |
-| typescript-eslint | 1,288 ms | ±0.69% | 1,223 ms | 1,417 ms | 15.0× slower |
+| **Yuku** | **71.0 ms** | **±3.12%** | **63.8 ms** | **107 ms** | **baseline** |
+| TypeScript | 603 ms | ±0.77% | 575 ms | 716 ms | 8.48× slower |
+| typescript-eslint | 994 ms | ±1.32% | 914 ms | 1,228 ms | 14.0× slower |
 
 ### [checker.ts](https://raw.githubusercontent.com/yuku-toolchain/parser-benchmark-files/refs/heads/main/checker.ts)
 
@@ -146,9 +146,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **32.7 ms** | **±2.18%** | **29.0 ms** | **50.9 ms** | **baseline** |
-| TypeScript | 272 ms | ±0.63% | 260 ms | 289 ms | 8.33× slower |
-| typescript-eslint | 430 ms | ±0.81% | 405 ms | 522 ms | 13.2× slower |
+| **Yuku** | **28.1 ms** | **±1.69%** | **23.3 ms** | **46.5 ms** | **baseline** |
+| TypeScript | 217 ms | ±0.66% | 202 ms | 234 ms | 7.74× slower |
+| typescript-eslint | 325 ms | ±1.37% | 307 ms | 453 ms | 11.6× slower |
 
 ### [lib.dom.d.ts](https://raw.githubusercontent.com/yuku-toolchain/parser-benchmark-files/refs/heads/main/lib.dom.d.ts)
 
@@ -158,9 +158,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **8.5 ms** | **±1.36%** | **8.0 ms** | **21.6 ms** | **baseline** |
-| TypeScript | 82.0 ms | ±0.57% | 78.3 ms | 90.6 ms | 9.59× slower |
-| typescript-eslint | 185 ms | ±0.96% | 174 ms | 206 ms | 21.6× slower |
+| **Yuku** | **6.8 ms** | **±1.06%** | **6.1 ms** | **20.7 ms** | **baseline** |
+| TypeScript | 67.2 ms | ±0.74% | 62.0 ms | 97.1 ms | 9.82× slower |
+| typescript-eslint | 146 ms | ±1.60% | 130 ms | 213 ms | 21.3× slower |
 
 ### [react.js](https://raw.githubusercontent.com/yuku-toolchain/parser-benchmark-files/refs/heads/main/react.js)
 
@@ -170,9 +170,9 @@ On single files:
 
 | Analyzer | Median | RME | Min | Max | Relative |
 |----------|--------|-----|-----|-----|----------|
-| **Yuku** | **0.48 ms** | **±0.04%** | **0.47 ms** | **1.3 ms** | **baseline** |
-| TypeScript | 5.2 ms | ±1.04% | 5.0 ms | 35.8 ms | 10.8× slower |
-| typescript-eslint | 6.9 ms | ±1.20% | 6.6 ms | 15.1 ms | 14.4× slower |
+| **Yuku** | **0.35 ms** | **±0.19%** | **0.33 ms** | **4.5 ms** | **baseline** |
+| TypeScript | 4.3 ms | ±0.79% | 3.9 ms | 24.0 ms | 12.1× slower |
+| typescript-eslint | 5.5 ms | ±0.57% | 4.8 ms | 14.1 ms | 15.8× slower |
 
 ## Analyzers
 
@@ -206,10 +206,10 @@ Every analyzer × codebase runs in its own freshly spawned Node.js process, so J
 | Property | Value |
 |----------|-------|
 | OS | macOS 25.6.0 (arm64) |
-| CPU | Apple M3 |
-| Cores | 8 |
-| Memory | 16 GB |
-| Runtime | Node.js v24.14.1 |
+| CPU | Apple M5 Max |
+| Cores | 18 |
+| Memory | 64 GB |
+| Runtime | Node.js v24.20.0 |
 
 ## Run the benchmarks
 
