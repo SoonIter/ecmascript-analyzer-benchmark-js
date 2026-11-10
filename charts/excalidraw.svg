@@ -5,13 +5,13 @@
   </style>
   <text x="105" y="11" text-anchor="end">Yuku</text>
   <rect x="115" y="0" width="41" height="22" rx="4" fill="#FF6B35"/>
-  <text x="164" y="11">101 ms</text>
+  <text x="164" y="11">85.4 ms</text>
   <text x="105" y="41" text-anchor="end">TypeScript</text>
-  <rect x="115" y="30" width="280" height="22" rx="4" fill="#3A86FF"/>
-  <text x="403" y="41">684 ms</text>
-  <text class="ratio" x="387" y="41" text-anchor="end">6.76×</text>
+  <rect x="115" y="30" width="296" height="22" rx="4" fill="#3A86FF"/>
+  <text x="419" y="41">612 ms</text>
+  <text class="ratio" x="403" y="41" text-anchor="end">7.17×</text>
   <text x="105" y="71" text-anchor="end">typescript-eslint</text>
   <rect x="115" y="60" width="445" height="22" rx="4" fill="#7209B7"/>
-  <text x="568" y="71">1,088 ms</text>
-  <text class="ratio" x="552" y="71" text-anchor="end">10.7×</text>
+  <text x="568" y="71">920 ms</text>
+  <text class="ratio" x="552" y="71" text-anchor="end">10.8×</text>
 </svg>
